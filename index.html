@@ -8,37 +8,38 @@
 <meta name="description" content="Sztabka inaugurująca kolekcję „Historia Złota” — złoto próby 999,9, mikrotekst grawerowany laserowo, certyfikat autentyczności. Cena inauguracyjna 429 zł.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bronze:#a8672f;
-    --bronze-light:#e3a868;
-    --bronze-dark:#6b3f16;
-    --brass:#c9974f;
-    --ink:#1a1714;
-    --charcoal:#241f1a;
-    --paper:#f6f1e8;
-    --paper-2:#ece2cd;
-    --line:#ddccab;
-    --emerald:#2c5f4a;
+    --ink:#1c1712;
+    --charcoal:#241c14;
+    --charcoal-2:#332616;
+    --brass:#a8783c;
+    --brass-light:#e6c37e;
+    --brass-dark:#6e4a1f;
+    --oxblood:#63232b;
+    --oxblood-light:#8a3c44;
+    --paper:#f7f2e6;
+    --paper-2:#efe3cb;
+    --line:#dcc8a0;
     --maxw:1160px;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   body{
-    font-family:'Manrope',"Segoe UI",sans-serif;
+    font-family:'Work Sans',"Segoe UI",sans-serif;
     color:var(--ink);
     background:var(--paper);
     line-height:1.65;
   }
-  h1,h2,h3,h4{font-family:'Fraunces',"Iowan Old Style",serif; font-weight:600; letter-spacing:-.2px;}
+  h1,h2,h3,h4{font-family:'Prata',"Iowan Old Style",serif; font-weight:400; letter-spacing:-.1px;}
   img{max-width:100%; display:block;}
   a{color:inherit;}
   .wrap{max-width:var(--maxw); margin:0 auto; padding:0 22px;}
   .btn{
     display:inline-block;
-    background:linear-gradient(180deg,var(--bronze-light),var(--bronze));
-    color:#241206;
-    font-family:'Manrope', sans-serif;
+    background:linear-gradient(180deg,var(--brass-light),var(--brass));
+    color:#2a1a05;
+    font-family:'Work Sans', sans-serif;
     font-weight:800;
     letter-spacing:.3px;
     padding:16px 38px;
@@ -46,41 +47,37 @@
     text-decoration:none;
     font-size:15px;
     box-shadow:0 3px 10px rgba(20,12,4,.25);
-    border:1px solid var(--bronze-dark);
+    border:1px solid var(--brass-dark);
     transition:transform .18s ease, box-shadow .18s ease;
   }
   .btn:hover{transform:translateY(-2px); box-shadow:0 8px 18px rgba(20,12,4,.32);}
   .btn:active{transform:translateY(0);}
   .btn-sm{padding:11px 24px; font-size:13px;}
-  .btn-ghost{
-    background:transparent; color:#f4ecd8; border:1px solid rgba(244,236,216,.4);
-  }
-  .btn-ghost:hover{background:rgba(244,236,216,.08);}
   .eyebrow{
-    font-family:'Manrope', sans-serif;
+    font-family:'Work Sans', sans-serif;
     font-size:12px;
     letter-spacing:2.5px;
     text-transform:uppercase;
-    color:var(--bronze-dark);
+    color:var(--brass-dark);
     font-weight:700;
   }
 
   .topbar{
     background:var(--charcoal); color:#e4d6b8;
-    font-family:'Manrope', sans-serif; font-size:13px;
+    font-family:'Work Sans', sans-serif; font-size:13px;
     padding:9px 0; text-align:center;
   }
-  .topbar b{color:var(--brass);}
+  .topbar b{color:var(--brass-light);}
 
   header.site{
     background:var(--paper); border-bottom:1px solid var(--line);
     padding:16px 0;
   }
   header.site .wrap{display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap;}
-  .logo{font-size:21px; font-weight:700; letter-spacing:.5px; display:flex; align-items:center; gap:10px; font-family:'Fraunces',serif;}
+  .logo{font-size:21px; font-weight:400; letter-spacing:.5px; display:flex; align-items:center; gap:10px; font-family:'Prata',serif;}
   .logo img{width:30px; height:30px;}
-  .logo span{color:var(--bronze-dark); font-style:italic;}
-  .contact-line{font-family:'Manrope', sans-serif; font-size:13px; text-align:right; color:#5a5348;}
+  .logo span{color:var(--brass-dark); font-style:italic; font-size:16px;}
+  .contact-line{font-family:'Work Sans', sans-serif; font-size:13px; text-align:right; color:#5a5348;}
   .contact-line b{color:var(--ink);}
   @media(max-width:560px){
     header.site{padding:13px 0;}
@@ -91,70 +88,83 @@
 
   section{padding:68px 0;}
   .section-head{text-align:center; max-width:720px; margin:0 auto 42px;}
-  .section-head h2{font-size:clamp(25px,3.2vw,34px); margin:10px 0 14px;}
+  .section-head h2{font-size:clamp(24px,3vw,32px); margin:10px 0 14px;}
   .section-head p{color:#5f584a; font-size:16px;}
   .alt{background:var(--paper-2);}
 
-  /* Hero */
+  /* ===== Hero — jeden spójny blok: grafika sztabki po lewej, formularz po prawej ===== */
   .hero{
     position:relative;
-    background:radial-gradient(1100px 480px at 78% -8%, #33291a 0%, var(--charcoal) 55%), var(--charcoal);
+    background:linear-gradient(165deg, var(--charcoal-2) 0%, var(--charcoal) 70%);
     color:#f4ecd8;
-    padding:60px 0 0;
+    padding:52px 0 64px;
     overflow:hidden;
   }
-  .hero::before{
+  .hero::after{
     content:"";
     position:absolute; inset:0;
-    background:
-      radial-gradient(circle at 12% 25%, rgba(227,168,104,.10), transparent 40%),
-      radial-gradient(circle at 88% 75%, rgba(201,151,79,.09), transparent 45%);
+    background-image:repeating-linear-gradient(115deg, rgba(230,195,126,.035) 0px, rgba(230,195,126,.035) 1px, transparent 1px, transparent 34px);
     pointer-events:none;
   }
-  .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:50px; align-items:center; position:relative; padding-bottom:56px;}
-  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;}}
-  .hero h1{font-size:clamp(30px,4.2vw,48px); line-height:1.12; margin:16px 0 18px; color:#fff;}
-  .hero h1 em{font-style:italic; color:var(--brass);}
-  .hero p.lead{font-size:17px; color:#d9cba9; max-width:50ch; margin-bottom:26px;}
-  .trust-row{display:flex; gap:22px; flex-wrap:wrap; margin-top:28px; font-family:'Manrope', sans-serif; font-size:13px; color:#c9b98c;}
-  .trust-row div{display:flex; align-items:center; gap:8px;}
-  .trust-row .dot{width:7px;height:7px;border-radius:50%;background:var(--brass);}
+  .hero-top{max-width:640px; margin-bottom:44px; position:relative;}
+  .hero-top h1{font-size:clamp(28px,3.6vw,42px); line-height:1.18; margin:14px 0 16px; color:#fff;}
+  .hero-top h1 em{font-style:italic; color:var(--brass-light);}
+  .hero-top p.lead{font-size:16.5px; color:#d9cba9; max-width:56ch;}
 
-  .bar-card{
-    background:linear-gradient(160deg,#33291a,#241f1a);
+  .hero-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start; position:relative;}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;}}
+
+  .bar-panel{
+    background:linear-gradient(165deg,#3a2c17,#241c14);
     border:1px solid #55432a;
-    border-radius:8px;
-    padding:28px;
-    text-align:center;
-    box-shadow:0 30px 60px rgba(0,0,0,.45);
+    border-radius:10px;
+    padding:34px 30px;
+    box-shadow:0 30px 60px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.04);
   }
-  .bar-visual{
-    width:220px;height:132px;margin:0 auto 20px;
-    border-radius:4px;
-    background:
-      linear-gradient(115deg, #fff6d6 0%, #e3a868 22%, #c9974f 46%, #a8672f 70%, #6b3f16 100%);
-    border:1px solid #6b3f16;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;
-    box-shadow:0 0 0 1px rgba(227,168,104,.2), inset 0 3px 10px rgba(255,255,255,.45), inset 0 -10px 18px rgba(0,0,0,.3);
-    position:relative;
-  }
-  .bar-visual .stamp{
-    font-family:'Manrope', sans-serif;
-    font-size:9px; font-weight:800; letter-spacing:2px;
-    color:#4a3413; text-transform:uppercase;
-  }
-  .bar-visual .fineness{
-    font-family:'Fraunces', serif; font-size:15px; font-weight:700; color:#3a2810;
-  }
-  .price-block{font-family:'Manrope', sans-serif; color:#f4ecd8;}
-  .price-old{color:#a49877; text-decoration:line-through; font-size:14px;}
-  .price-new{font-size:36px; font-weight:800; color:var(--brass); margin:2px 0 4px;}
+  .bar-visual-frame{width:100%; max-width:340px; margin:0 auto 26px;}
+  .price-row{display:flex; align-items:baseline; gap:12px; justify-content:center; flex-wrap:wrap;}
+  .price-old{color:#a49877; text-decoration:line-through; font-size:15px; font-family:'Work Sans',sans-serif;}
+  .price-new{font-size:38px; font-weight:800; color:var(--brass-light); font-family:'Work Sans',sans-serif;}
   .price-save{
-    display:inline-block; background:var(--emerald); color:#fff; font-size:12px; font-weight:700;
-    padding:3px 11px; border-radius:20px; margin-bottom:14px;
+    display:inline-block; background:var(--oxblood); color:#f4ecd8; font-size:12px; font-weight:700;
+    padding:4px 12px; border-radius:2px; margin:12px 0 18px; letter-spacing:.3px;
   }
-  .bar-card .btn{width:100%; text-align:center; margin-top:6px;}
-  .micro{font-size:11px; color:#a49877; margin-top:10px;}
+  .bar-panel-foot{text-align:center;}
+  .bar-panel .btn{width:100%; text-align:center; margin-top:4px;}
+  .micro{font-size:11.5px; color:#a49877; margin-top:12px; text-align:center;}
+  .trust-row{display:flex; gap:18px; flex-wrap:wrap; margin-top:22px; font-family:'Work Sans', sans-serif; font-size:12.5px; color:#c9b98c; justify-content:center;}
+  .trust-row div{display:flex; align-items:center; gap:7px;}
+  .trust-row .dot{width:6px;height:6px;border-radius:50%;background:var(--brass-light); flex-shrink:0;}
+
+  .order-form{
+    background:#fdfbf5; border:1px solid var(--line); border-radius:10px; padding:34px; box-shadow:0 20px 44px rgba(0,0,0,.28);
+  }
+  .order-form .row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;}
+  @media(max-width:560px){.order-form .row{grid-template-columns:1fr;}}
+  .order-form label{
+    display:block; font-family:'Work Sans', sans-serif; font-size:12.5px; font-weight:700; color:#4a4636; margin-bottom:6px;
+  }
+  .order-form input, .order-form select{
+    width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:4px;
+    font-family:'Work Sans', sans-serif; font-size:14px; background:var(--paper); color:var(--ink);
+  }
+  .order-form input:focus, .order-form select:focus{
+    outline:2px solid var(--brass-light); outline-offset:1px;
+  }
+  .order-form .full{grid-column:1/-1;}
+  .order-summary{
+    background:var(--paper-2);
+    border-radius:4px; padding:16px 18px; margin:20px 0; font-family:'Work Sans', sans-serif; font-size:13.5px;
+  }
+  .order-summary .line{display:flex; justify-content:space-between; padding:4px 0; color:#4a4636;}
+  .order-summary .line .free{color:var(--oxblood); font-weight:700;}
+  .order-summary .total{
+    display:flex; justify-content:space-between; align-items:center;
+    border-top:1px solid var(--line); margin-top:8px; padding-top:10px; font-size:14px;
+  }
+  .order-summary b{color:var(--brass-dark); font-size:18px;}
+  .order-form .btn{width:100%; text-align:center; border:none; cursor:pointer;}
+  .order-note{font-family:'Work Sans', sans-serif; font-size:12px; color:#8a8570; text-align:center; margin-top:14px;}
 
   /* Story */
   .story-grid{display:grid; grid-template-columns:1fr 1fr; gap:52px; align-items:center;}
@@ -166,14 +176,14 @@
     box-shadow:0 16px 34px rgba(0,0,0,.12);
   }
   .story-grid .ph img{width:100%; height:100%; object-fit:cover; object-position:center 30%;}
-  .story-grid h3{font-size:24px; margin-bottom:14px;}
+  .story-grid h3{font-size:23px; margin-bottom:14px;}
   .story-grid p{color:#403a2e; margin-bottom:14px;}
   blockquote{
     margin:18px 0; padding:18px 22px;
     background:var(--paper-2); border-radius:4px;
     font-style:italic; color:#5e4a2a;
   }
-  blockquote::before{content:"“"; color:var(--bronze); font-size:22px; margin-right:4px; font-style:normal;}
+  blockquote::before{content:"“"; color:var(--brass); font-size:22px; margin-right:4px; font-style:normal;}
 
   /* Features */
   .features{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
@@ -186,10 +196,10 @@
   .feature:hover{transform:translateY(-4px); box-shadow:0 14px 26px rgba(20,12,4,.10);}
   .feature .ic{
     width:50px;height:50px;border-radius:50%;margin:0 auto 14px;
-    background:linear-gradient(180deg,var(--bronze-light),var(--bronze));
-    display:flex;align-items:center;justify-content:center;color:#241206;font-weight:800;font-family:'Manrope', sans-serif;font-size:14px;
+    background:linear-gradient(180deg,var(--brass-light),var(--brass));
+    display:flex;align-items:center;justify-content:center;color:#2a1a05;font-weight:800;font-family:'Work Sans', sans-serif;font-size:13.5px;
   }
-  .feature h4{font-size:16.5px;margin-bottom:8px; font-family:'Fraunces',serif;}
+  .feature h4{font-size:16.5px;margin-bottom:8px; font-family:'Prata',serif; font-weight:400;}
   .feature p{font-size:14px;color:#5f584a;}
 
   /* Timeline / journey gallery */
@@ -207,13 +217,13 @@
   }
   .journey-strip figure:hover .era-photo{ transform:scale(1.08); }
   .journey-strip figcaption{
-    font-family:'Manrope', sans-serif; font-size:12px; font-weight:700; letter-spacing:.4px;
+    font-family:'Work Sans', sans-serif; font-size:12px; font-weight:700; letter-spacing:.4px;
     text-align:center; padding:11px 8px; background:#fff; color:#4a4636;
   }
-  .journey-strip figcaption b{display:block; font-size:10px; color:var(--bronze-dark); font-weight:800; letter-spacing:1px; margin-bottom:2px;}
+  .journey-strip figcaption b{display:block; font-size:10px; color:var(--brass-dark); font-weight:800; letter-spacing:1px; margin-bottom:2px;}
 
   table.specs{width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:6px; overflow:hidden;}
-  table.specs td{padding:16px 20px; border-bottom:1px solid var(--line); font-family:'Manrope', sans-serif; font-size:14.5px;}
+  table.specs td{padding:16px 20px; border-bottom:1px solid var(--line); font-family:'Work Sans', sans-serif; font-size:14.5px;}
   table.specs tr:last-child td{border-bottom:none;}
   table.specs td:first-child{color:#7a7460; width:42%;}
   table.specs td:last-child{font-weight:700;}
@@ -221,28 +231,28 @@
   .guarantee{
     background:var(--charcoal); color:#f0e6c8; border-radius:8px; padding:46px; text-align:center;
   }
-  .guarantee h3{font-size:22px; margin-bottom:12px; color:#fff;}
+  .guarantee h3{font-size:21px; margin-bottom:12px; color:#fff; font-weight:400;}
   .guarantee p{max-width:600px; margin:0 auto 22px; color:#cbbd93;}
 
   .testi-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
   @media(max-width:850px){.testi-grid{grid-template-columns:1fr;}}
   .testi{background:#fff; border:1px solid var(--line); border-radius:6px; padding:26px;}
-  .stars{color:var(--bronze); font-size:15px; margin-bottom:10px; letter-spacing:2px;}
+  .stars{color:var(--brass); font-size:15px; margin-bottom:10px; letter-spacing:2px;}
   .testi p{font-size:14.5px; color:#403a2e; margin-bottom:14px;}
-  .testi .who{font-family:'Manrope', sans-serif; font-size:13px; font-weight:700; color:#7a6733;}
+  .testi .who{font-family:'Work Sans', sans-serif; font-size:13px; font-weight:700; color:#7a6733;}
 
   .faq-item{border-bottom:1px solid var(--line); padding:19px 0;}
-  .faq-item summary{cursor:pointer; font-weight:700; font-size:16px; list-style:none; position:relative; padding-right:26px; font-family:'Fraunces',serif;}
+  .faq-item summary{cursor:pointer; font-weight:600; font-size:15.5px; list-style:none; position:relative; padding-right:26px; font-family:'Work Sans',sans-serif;}
   .faq-item summary::-webkit-details-marker{display:none;}
-  .faq-item summary::after{content:"+"; position:absolute; right:0; top:0; font-size:20px; color:var(--bronze-dark); transition:transform .2s ease;}
+  .faq-item summary::after{content:"+"; position:absolute; right:0; top:0; font-size:20px; color:var(--brass-dark); transition:transform .2s ease;}
   .faq-item[open] summary::after{content:"–";}
   .faq-item p{margin-top:11px; color:#5f584a; font-size:14.5px;}
 
   .final-cta{
-    background:linear-gradient(160deg,#33291a,#241f1a); color:#f4ecd8; text-align:center; border-radius:10px;
+    background:linear-gradient(165deg,#3a2c17,#241c14); color:#f4ecd8; text-align:center; border-radius:10px;
     padding:58px 24px;
   }
-  .final-cta h2{color:#fff; font-size:clamp(23px,3vw,31px); margin-bottom:14px;}
+  .final-cta h2{color:#fff; font-size:clamp(22px,3vw,29px); margin-bottom:14px; font-weight:400;}
   .final-cta p{color:#cbbd93; max-width:540px; margin:0 auto 26px;}
 
   .sticky-bar{
@@ -250,7 +260,7 @@
     box-shadow:0 -6px 18px rgba(0,0,0,.08);
   }
   .sticky-bar .wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 20px; flex-wrap:nowrap;}
-  .sticky-bar .price{font-family:'Manrope', sans-serif; font-weight:800; color:var(--bronze-dark); font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .sticky-bar .price{font-family:'Work Sans', sans-serif; font-weight:800; color:var(--brass-dark); font-size:15px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
   @media(max-width:560px){
     .sticky-bar .wrap{padding:10px 14px; gap:10px;}
     .sticky-bar .price{font-size:19px;}
@@ -259,74 +269,23 @@
     .sticky-bar .btn-sm{padding:9px 16px; font-size:12px; flex-shrink:0;}
   }
 
-  footer{background:var(--charcoal); color:#a49877; padding:42px 0 26px; font-family:'Manrope', sans-serif; font-size:13px;}
+  footer{background:var(--charcoal); color:#a49877; padding:42px 0 26px; font-family:'Work Sans', sans-serif; font-size:13px;}
   footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:20px;}
   footer a{color:#cbbd93; text-decoration:none;}
-  footer a:hover{color:var(--brass);}
+  footer a:hover{color:var(--brass-light);}
   footer .legal{margin-top:22px; font-size:11.5px; color:#6b6350; text-align:center; width:100%;}
 
   .badge-note{
-    background:#fff8e6; border:1px solid var(--line); color:#6b5b21; font-family:'Manrope', sans-serif;
+    background:#fff8e6; border:1px solid var(--line); color:#6b5b21; font-family:'Work Sans', sans-serif;
     font-size:12.5px; padding:11px 16px; border-radius:4px; text-align:center; margin-top:22px;
   }
 
-  .order-form{
-    background:#fff; border:1px solid var(--line); border-radius:8px; padding:38px; max-width:640px; margin:0 auto;
-  }
-  .order-form .row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;}
-  @media(max-width:560px){.order-form .row{grid-template-columns:1fr;}}
-  .order-form label{
-    display:block; font-family:'Manrope', sans-serif; font-size:12.5px; font-weight:700; color:#4a4636; margin-bottom:6px;
-  }
-  .order-form input, .order-form select{
-    width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:4px;
-    font-family:'Manrope', sans-serif; font-size:14px; background:var(--paper); color:var(--ink);
-  }
-  .order-form input:focus, .order-form select:focus{
-    outline:2px solid var(--bronze-light); outline-offset:1px;
-  }
-  .order-form .full{grid-column:1/-1;}
-  .order-summary{
-    background:var(--paper-2);
-    border-radius:4px; padding:16px 18px; margin:20px 0; font-family:'Manrope', sans-serif; font-size:13.5px;
-  }
-  .order-summary .line{display:flex; justify-content:space-between; padding:4px 0; color:#4a4636;}
-  .order-summary .line .free{color:var(--emerald); font-weight:700;}
-  .order-summary .total{
-    display:flex; justify-content:space-between; align-items:center;
-    border-top:1px solid var(--line); margin-top:8px; padding-top:10px; font-size:14px;
-  }
-  .order-summary b{color:var(--bronze-dark); font-size:18px;}
-  .order-form .btn{width:100%; text-align:center; border:none; cursor:pointer;}
-  .order-note{font-family:'Manrope', sans-serif; font-size:12px; color:#8a8570; text-align:center; margin-top:14px;}
   .avatar-ph{
     width:44px;height:44px;border-radius:50%;margin-bottom:12px;
-    background:linear-gradient(160deg,#e6d7ad,#c9974f);
+    background:linear-gradient(160deg,#e6d7ad,#a8783c);
     display:flex;align-items:center;justify-content:center;font-size:18px;
     border:1px solid var(--line);
   }
-
-  /* ===== Promo banner hero (baner po lewej, formularz po prawej) ===== */
-  .promo-banner{
-    position:relative;
-    background-color:var(--charcoal);
-    background-image:
-      linear-gradient(rgba(26,20,12,.55),rgba(26,20,12,.75)),
-      url("images/TLO2.jpg");
-    background-size:cover;
-    background-position:center 30%;
-    background-attachment:fixed;
-    padding:56px 0 60px;
-  }
-  @media (max-width:900px){ .promo-banner{ background-attachment:scroll; padding:32px 0 40px; } }
-  .promo-hero-grid{
-    display:grid; grid-template-columns:1.05fr .95fr; gap:44px; align-items:start;
-  }
-  @media (max-width:900px){ .promo-hero-grid{ grid-template-columns:1fr; gap:26px; } }
-  .promo-hero-left img{
-    border-radius:8px; box-shadow:0 24px 50px rgba(0,0,0,.4); border:1px solid rgba(227,168,104,.25);
-  }
-  .order-form-compact{ margin:0; max-width:none; padding:32px; box-shadow:0 20px 44px rgba(0,0,0,.3); }
 
   .reveal{opacity:0; transform:translateY(28px); transition:opacity .7s ease, transform .7s ease;}
   .reveal.is-visible{opacity:1; transform:translateY(0);}
@@ -335,11 +294,11 @@
 </head>
 <body>
 
-<div class="topbar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:-2px; margin-right:5px;"><path d="M12 2l2.5 5.5L20 8.5l-4 4 1 5.5L12 15.5 7 18l1-5.5-4-4 5.5-1L12 2z" fill="#c9974f"/></svg> Sztabka inauguracyjna kolekcji „Historia Złota” — limitacja <b>5000 kompletnych kolekcji</b> na cały świat</div>
+<div class="topbar"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:-2px; margin-right:5px;"><path d="M12 2l2.5 5.5L20 8.5l-4 4 1 5.5L12 15.5 7 18l1-5.5-4-4 5.5-1L12 2z" fill="#e6c37e"/></svg> Sztabka inauguracyjna kolekcji „Historia Złota” — limitacja <b>5000 kompletnych kolekcji</b> na cały świat</div>
 
 <header class="site">
   <div class="wrap">
-    <div class="logo"><img src="images/logoAZ-mailing.png" alt="AZ Aurum"> AZ AURUM <span>· Historia Złota</span></div>
+    <div class="logo"><img src="images/logoAZ-mailing.png" alt="AZ Aurum"> AZ AURUM <span>Historia Złota</span></div>
     <div class="contact-line">
       <div><b>784 622 333</b> · pon–pt, 9:00–17:00</div>
       <div>sklep@azaurum-sklep.pl</div>
@@ -348,103 +307,137 @@
 </header>
 
 <section class="hero" id="formularz">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow" style="color:var(--brass);">Sztabka inauguracyjna kolekcji</div>
-      <h1>Złoto, które<br><em>zapisuje historię</em> —<br>sztabka po sztabce.</h1>
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="eyebrow" style="color:var(--brass-light);">Sztabka inauguracyjna kolekcji</div>
+      <h1>Złoto, które <em>zapisuje historię</em> — sztabka po sztabce.</h1>
       <p class="lead">„Standard Złota” otwiera 14-częściową kolekcję „Historia Złota”: podróż od starożytności po współczesność, wybitą w złocie próby 999,9 z mikrotekstem grawerowanym laserowo o rozdzielczości 0,2 mm.</p>
-      <div class="trust-row">
-        <div><span class="dot"></span> Złoto próby 999,9</div>
-        <div><span class="dot"></span> Certyfikat autentyczności</div>
-        <div><span class="dot"></span> 14 dni na zwrot</div>
-        <div><span class="dot"></span> Limitacja 5000 kolekcji</div>
-      </div>
     </div>
 
-    <div class="bar-card">
-      <div class="bar-visual">
-        <span class="stamp">Au 999,9</span>
-        <span class="fineness">Standard Złota</span>
-        <span class="stamp">0,31 g · 1/100 oz</span>
-      </div>
-      <div class="price-block">
-        <div class="price-old">499 zł</div>
-        <div class="price-new">429 zł</div>
-        <div class="price-save">Oszczędzasz 70 zł</div>
-      </div>
-      <a href="#formularz-zamowienie" class="btn">Zamawiam sztabkę inauguracyjną</a>
-      <div class="micro">Kolejne 13 sztabek kolekcji — 499 zł/mies., rezygnacja w każdej chwili</div>
-    </div>
-  </div>
-</section>
+    <div class="hero-grid">
+      <div class="bar-panel">
+        <div class="bar-visual-frame">
+          <svg viewBox="0 0 320 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sztabka złota Standard Złota, próba 999,9">
+            <defs>
+              <linearGradient id="barFace" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#f7e6b4"/>
+                <stop offset="28%" stop-color="#e6c37e"/>
+                <stop offset="55%" stop-color="#c39a52"/>
+                <stop offset="80%" stop-color="#9a7434"/>
+                <stop offset="100%" stop-color="#6e4a1f"/>
+              </linearGradient>
+              <linearGradient id="barTop" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fbf1cf"/>
+                <stop offset="100%" stop-color="#d4ac6c"/>
+              </linearGradient>
+              <linearGradient id="barSide" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#8a6832"/>
+                <stop offset="100%" stop-color="#5c3e18"/>
+              </linearGradient>
+              <pattern id="brushed" width="6" height="6" patternTransform="rotate(115)" patternUnits="userSpaceOnUse">
+                <rect width="6" height="6" fill="transparent"/>
+                <line x1="0" y1="0" x2="0" y2="6" stroke="#fff" stroke-opacity=".06" stroke-width="1"/>
+              </pattern>
+            </defs>
 
-<section class="promo-banner" id="formularz-baner">
-  <div class="wrap promo-hero-grid">
-    <div class="promo-hero-left">
-      <img src="images/baner-hze-nowa-test2.png" alt="Kolekcja Historia Złota — sztabka Standard Złota, cena inauguracyjna 429 zł" style="width:100%; height:auto; margin-bottom:26px;">
-      <div class="trust-row" style="justify-content:center; color:#e4d6b8;">
-        <div><span class="dot"></span> Certyfikat autentyczności</div>
-        <div><span class="dot"></span> Złoto próby 999,9</div>
-        <div><span class="dot"></span> 14 dni na zwrot</div>
-        <div><span class="dot"></span> Mikrotekst laserowy 0,2 mm</div>
-      </div>
-    </div>
+            <!-- top bevel face -->
+            <polygon points="46,58 274,58 252,36 68,36" fill="url(#barTop)"/>
+            <!-- right side face -->
+            <polygon points="274,58 274,148 252,168 252,36" fill="url(#barSide)"/>
+            <!-- front face -->
+            <rect x="46" y="58" width="228" height="90" fill="url(#barFace)"/>
+            <rect x="46" y="58" width="228" height="90" fill="url(#brushed)"/>
 
-    <div class="promo-hero-right" id="formularz-zamowienie">
-      <form class="order-form order-form-compact" onsubmit="event.preventDefault(); alert('To wersja demonstracyjna szablonu — zamówienia nie są jeszcze obsługiwane.');">
-        <div class="eyebrow" style="text-align:center; display:block; margin-bottom:6px;">Formularz testowy</div>
-        <h2 style="text-align:center; font-size:22px; margin-bottom:22px;">Zamów sztabkę „Standard Złota”</h2>
-        <div class="row">
-          <div>
-            <label for="imie">Imię i nazwisko</label>
-            <input id="imie" type="text" placeholder="Jan Kowalski" required>
-          </div>
-          <div>
-            <label for="tel">Telefon</label>
-            <input id="tel" type="tel" placeholder="+48 600 000 000" required>
-          </div>
+            <!-- engraved double frame -->
+            <rect x="58" y="70" width="204" height="66" fill="none" stroke="#4a3113" stroke-width="1.2" stroke-opacity=".55"/>
+            <rect x="62" y="74" width="196" height="58" fill="none" stroke="#fbf1cf" stroke-width="1" stroke-opacity=".35"/>
+
+            <text x="160" y="88" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="9" font-weight="800" letter-spacing="3" fill="#4a3113">AU 999,9 · FINE GOLD</text>
+            <text x="160" y="112" text-anchor="middle" font-family="Prata, serif" font-size="19" fill="#3a2810">Standard Złota</text>
+            <text x="160" y="128" text-anchor="middle" font-family="Work Sans, sans-serif" font-size="9" font-weight="700" letter-spacing="2" fill="#4a3113">0,31 G · 1/100 OZ · No. 000147</text>
+
+            <!-- hallmark stamp -->
+            <g transform="translate(238,44)">
+              <circle r="12" fill="#fbf1cf" fill-opacity=".9" stroke="#4a3113" stroke-width="1"/>
+              <path d="M-5 1 L-1.5 4.5 L5 -3.5" stroke="#4a3113" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+          </svg>
         </div>
-        <div class="row">
-          <div class="full">
-            <label for="email">Adres e-mail</label>
-            <input id="email" type="email" placeholder="jan.kowalski@przyklad.pl" required>
+
+        <div class="bar-panel-foot">
+          <div class="price-row">
+            <span class="price-old">499 zł</span>
+            <span class="price-new">429 zł</span>
           </div>
+          <div class="price-save">Oszczędzasz 70 zł na pierwszej sztabce</div>
+          <a href="#formularz-zamowienie" class="btn">Zamawiam sztabkę inauguracyjną</a>
+          <div class="micro">Kolejne 13 sztabek kolekcji — 499 zł/mies., rezygnacja w każdej chwili</div>
         </div>
-        <div class="row">
-          <div class="full">
-            <label for="adres">Adres dostawy</label>
-            <input id="adres" type="text" placeholder="Ulica, numer domu/mieszkania">
+
+        <div class="trust-row">
+          <div><span class="dot"></span> Złoto próby 999,9</div>
+          <div><span class="dot"></span> Certyfikat autentyczności</div>
+          <div><span class="dot"></span> 14 dni na zwrot</div>
+          <div><span class="dot"></span> Limitacja 5000 kolekcji</div>
+        </div>
+      </div>
+
+      <div id="formularz-zamowienie">
+        <form class="order-form" onsubmit="event.preventDefault(); alert('To wersja demonstracyjna szablonu — zamówienia nie są jeszcze obsługiwane.');">
+          <div class="eyebrow" style="text-align:center; display:block; margin-bottom:6px;">Formularz testowy</div>
+          <h2 style="text-align:center; font-size:21px; margin-bottom:22px; font-weight:400;">Zamów sztabkę „Standard Złota”</h2>
+          <div class="row">
+            <div>
+              <label for="imie">Imię i nazwisko</label>
+              <input id="imie" type="text" placeholder="Jan Kowalski" required>
+            </div>
+            <div>
+              <label for="tel">Telefon</label>
+              <input id="tel" type="tel" placeholder="+48 600 000 000" required>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div>
-            <label for="miasto">Miasto</label>
-            <input id="miasto" type="text" placeholder="Warszawa">
+          <div class="row">
+            <div class="full">
+              <label for="email">Adres e-mail</label>
+              <input id="email" type="email" placeholder="jan.kowalski@przyklad.pl" required>
+            </div>
           </div>
-          <div>
-            <label for="kod">Kod pocztowy</label>
-            <input id="kod" type="text" placeholder="00-000">
+          <div class="row">
+            <div class="full">
+              <label for="adres">Adres dostawy</label>
+              <input id="adres" type="text" placeholder="Ulica, numer domu/mieszkania">
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="full">
-            <label for="ilosc">Wariant zamówienia</label>
-            <select id="ilosc">
-              <option>Sztabka inauguracyjna — 429 zł</option>
-              <option>Sztabka inauguracyjna + subskrypcja kolekcji — 429 zł, potem 499 zł/mies.</option>
-            </select>
+          <div class="row">
+            <div>
+              <label for="miasto">Miasto</label>
+              <input id="miasto" type="text" placeholder="Warszawa">
+            </div>
+            <div>
+              <label for="kod">Kod pocztowy</label>
+              <input id="kod" type="text" placeholder="00-000">
+            </div>
           </div>
-        </div>
-        <div class="order-summary">
-          <div class="line"><span>Sztabka „Standard Złota”</span><span>429,00 zł</span></div>
-          <div class="line"><span>Dostawa</span><span>14,99 zł</span></div>
-          <div class="line"><span>Folder kolekcjonerski</span><span class="free">Gratis</span></div>
-          <div class="line"><span>Certyfikat autentyczności</span><span class="free">Gratis</span></div>
-          <div class="total"><span>Razem do zapłaty</span><b>443,99 zł</b></div>
-        </div>
-        <button type="submit" class="btn">Wyślij zamówienie</button>
-        <div class="order-note">To formularz demonstracyjny — zamówienia nie są rejestrowane ani przekazywane do realizacji.</div>
-      </form>
+          <div class="row">
+            <div class="full">
+              <label for="ilosc">Wariant zamówienia</label>
+              <select id="ilosc">
+                <option>Sztabka inauguracyjna — 429 zł</option>
+                <option>Sztabka inauguracyjna + subskrypcja kolekcji — 429 zł, potem 499 zł/mies.</option>
+              </select>
+            </div>
+          </div>
+          <div class="order-summary">
+            <div class="line"><span>Sztabka „Standard Złota”</span><span>429,00 zł</span></div>
+            <div class="line"><span>Dostawa</span><span>14,99 zł</span></div>
+            <div class="line"><span>Folder kolekcjonerski</span><span class="free">Gratis</span></div>
+            <div class="line"><span>Certyfikat autentyczności</span><span class="free">Gratis</span></div>
+            <div class="total"><span>Razem do zapłaty</span><b>443,99 zł</b></div>
+          </div>
+          <button type="submit" class="btn">Wyślij zamówienie</button>
+          <div class="order-note">To formularz demonstracyjny — zamówienia nie są rejestrowane ani przekazywane do realizacji.</div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
@@ -538,9 +531,9 @@
 <section class="reveal">
   <div class="wrap">
     <div class="guarantee">
-      <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:-5px; margin-right:8px;"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z" stroke="#c9974f" stroke-width="1.6" fill="rgba(201,151,79,.12)"/><path d="M8.5 12l2.3 2.3L15.5 9.5" stroke="#c9974f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Gwarancja spokojnego zakupu — 14 dni</h3>
+      <h3><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:-5px; margin-right:8px;"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z" stroke="#e6c37e" stroke-width="1.6" fill="rgba(230,195,126,.12)"/><path d="M8.5 12l2.3 2.3L15.5 9.5" stroke="#e6c37e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Gwarancja spokojnego zakupu — 14 dni</h3>
       <p>Zamów sztabkę bez ryzyka. Masz 14 dni na dokładne zapoznanie się z egzemplarzem — jeśli z jakiegokolwiek powodu nie spełni Twoich oczekiwań, możesz dokonać zwrotu (koszt przesyłki zwrotnej po stronie klienta).</p>
-      <a href="#zamow" class="btn btn-sm">Zamawiam z gwarancją</a>
+      <a href="#formularz-zamowienie" class="btn btn-sm">Zamawiam z gwarancją</a>
     </div>
   </div>
 </section>
@@ -606,7 +599,7 @@
 <section class="alt reveal" id="zamow">
   <div class="wrap">
     <div class="final-cta">
-      <div class="eyebrow" style="color:var(--brass);">Oferta ograniczona czasowo</div>
+      <div class="eyebrow" style="color:var(--brass-light);">Oferta ograniczona czasowo</div>
       <h2>Rozpocznij kolekcję „Historia Złota” już dziś</h2>
       <p>Cena inauguracyjna 429 zł zamiast 499 zł obowiązuje tylko dla ograniczonej liczby egzemplarzy z bieżącej transzy.</p>
       <a href="#formularz-zamowienie" class="btn">Tak, zamawiam sztabkę</a>
