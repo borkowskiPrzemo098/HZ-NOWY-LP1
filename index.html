@@ -112,8 +112,12 @@
     flex-direction:column;
   }
 
-  .visual-card{align-items:center; text-align:center; justify-content:space-between;}
-  .bar-visual-frame{width:100%; max-width:320px; margin:0 auto 22px;}
+  .visual-card{
+    background:none; border:none; padding:0; box-shadow:none;
+    align-items:center; text-align:center; justify-content:flex-start;
+  }
+  .bar-visual-frame{width:100%; margin:0 auto 22px;}
+  .bar-visual-frame img{border-radius:0; border:none;}
   .price-row{display:flex; align-items:baseline; gap:12px; justify-content:center; flex-wrap:wrap;}
   .price-old{color:#9a9483; text-decoration:line-through; font-size:15px;}
   .price-new{font-size:34px; font-weight:800; color:var(--ink); font-family:'Archivo',sans-serif;}
@@ -305,7 +309,7 @@
     <div class="hero-row">
       <div class="panel visual-card">
         <div class="bar-visual-frame">
-          <img src="images/baner-hze-nowa-test2.png" alt="Kolekcja Historia Złota — baner poglądowy (do podmiany)" style="border-radius:6px; border:1px solid var(--line);">
+          <img src="images/baner-hze-nowa-test2.png" alt="Kolekcja Historia Złota — baner poglądowy (do podmiany)">
         </div>
 
         <div class="price-row">
