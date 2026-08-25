@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "fraunces",
+        "files": [
+          "HZ-NOWY-LP1/index.html"
+        ],
+        "createdAt": "2026-08-25T09:51:50.220Z",
+        "reason": "user confirmed via screenshot review; Fraunces+Manrope deliberately chosen to visually differentiate this bronze/brass identity from the LP-test1HZE black/gold coin design"
+      }
+    ]
+  }
+}

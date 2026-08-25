@@ -171,8 +171,9 @@
   blockquote{
     margin:18px 0; padding:18px 22px;
     background:var(--paper-2); border-radius:4px;
-    font-style:italic; color:#5e4a2a; border-left:3px solid var(--bronze);
+    font-style:italic; color:#5e4a2a;
   }
+  blockquote::before{content:"“"; color:var(--bronze); font-size:22px; margin-right:4px; font-style:normal;}
 
   /* Features */
   .features{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
